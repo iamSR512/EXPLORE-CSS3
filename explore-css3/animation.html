@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        @keyframes sliding {
+         /* উপর */  0%{ 
+            background-color: rgb(183, 16, 205);
+            left: 0px;
+            top: 0px;
+            transform: scale(0.5);
+            /* (transform=রুপান্তর ) ছোট বড় সাইজ করা অথবা ছোট থেকে বড় করা */
+        } 
+
+
+
+
+    /* নিচে */    25%{
+            background-color: chartreuse;
+           
+top: 200px;
+        }
+
+
+      /* উপর */  50%{
+background-color: deeppink;
+left: 350px;
+top: 0px;
+           }
+
+         /* নিচে */  75%{
+            background-color: orange;
+            
+top: 200px;
+           }
+           /*  */
+ 
+         /* উপর */    100%{
+            background-color:rgb(24, 51, 206);
+            left: 700px;
+            top: 0px;
+            transform: scale(১);
+           }
+        }
+        .stage{
+            width: 800px;
+            height: 300px;
+            background-color: rgb(209, 197, 193);
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(96, 206, 44);
+            border-radius: 50%;
+         position: relative;   
+         /* relative  এক জায়গা থেকে অন্য জায়গায় সরাতে সাহায্য করে */
+            animation: sliding 2s ease-in-out 0.5s infinite alternate ;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+<body>
+    <h1>start to an animation</h1>
+    <div class="stage">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>

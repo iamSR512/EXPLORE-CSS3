@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{--primary-color:green;/*primary color অনেক জায়গায় রঙ চেঞ্জ করতে চাইলে এর সাহায্য ণেয়া হয়*/
+            --secondary-color:rgb(138, 135, 235);
+    }
+        h1{
+            color: var(--primary-color);/*var কালার গুলোকে কল করে*/
+        }
+        #heading-3{
+            border:2px solid blue;
+        }
+        p{
+            border-bottom: 3px solid red;
+            color:var(--secondary-color)
+        }
+        .box{color: var(--primary-color);
+   }
+        .pond{background-color: aquamarine;
+        color: var(--secondary-color);
+        width: calc(100% - 200px
+    );
+    height: 50px;}
+
+
+
+    </style>
+</head>
+<body>
+<h1 class="heading" id="heading-1">heading initial call is h-1</h1>
+<h1 class="heading" id="heading-2">heading initial call is h-2</h1>
+<h1 class="heading" id="heading-3">heading initial call is h-3</h1>
+<h1 class="heading" id="heading-4">heading initial call is h-4</h1>
+<p>this is a simple paragraph</p>
+<div>
+    <h3 class="box">my box liner</h3>
+</div>
+<p>this is a simple paragraph</p>
+<p>this is a simple paragraph</p>
+<div>
+    <h3 class="pond">pond is very clean</h3>
+</div>
+<p>this is a simple paragraph</p>
+
+</body>
+</html>

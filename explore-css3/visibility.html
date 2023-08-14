@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 2px solid red;
+        }
+        #box-2{
+          border-color: aqua;
+          /*display: none;  ডিসপ্লে নান মানে অই আইডী ও তার জায়গা সহ মুছে যাবে*/
+          visibility: hidden;/*visibility: hidden; মানে অই আইডী মুছে যাবে কিন্তু তার জায়গা খালি থেকে যাবে*/
+        }
+    </style>
+</head>
+<body>
+  <div class="box" id="box-1">
+    <h3>box-1</h3>
+  </div>
+  <div class="box" id="box-2">
+    <h3>box-2</h3>
+  </div>
+  <div class="box" id="box-3">
+    <h3>box-3</h3>
+  </div>
+  <div class="box" id="box-4">
+  <h3>box-4</h3>
+</div>
+  
+  
+  
+  
+</body>
+</html>

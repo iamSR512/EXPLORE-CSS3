@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: red;
+            color: aqua !important;/*কোনো কিছুর খাওয়া নাই important এর কাসে */
+            color:blueviolet;/**/
+        }/*কালার সিরিয়াল বাই সিরিয়াল হলে সবার সেসে বা নিচে যে কালার থাকবে সে অগ্রাধিকার পাবে  */
+        .h1{
+            color: brown;/*সেসে অথবা নিচে কোনো খাওয়া নাই .ক্লাস এর কালার অগ্রাধিকার পাবে*/
+        }
+        #h1{
+            color: rgb(132, 165, 42);/*সেসে অথবা নিচে ক্লাস এর কালার অগ্রাধিকার  কোনো খাওয়া নাই #id অগ্রাধিকার পাবে*/
+        }
+ /*সেসে অথবা নিচে ক্লাস এর #id এর কালার কোনো খাওয়া নাই ইনলাইন স্টাইল কালার আগে */
+
+ /*অগ্রাধিকার সম্পরকে বেশি জানার প্র্যোজন হলে ভিজিট https://specificity.keegan.st/ ...*/
+    </style>
+</head>
+<body>
+   <h1 style="color: crimson;" id="h1">my special heading line</h1>
+   <h1>my special heading line</h1>
+   <h1>my special heading line</h1>
+   <h1>my special heading line</h1>
+</body>
+</html>
